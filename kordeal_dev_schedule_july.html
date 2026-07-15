@@ -1,0 +1,156 @@
+
+<style>
+  .wrap { padding: 1rem 0; font-size: 13px; }
+  .phase-label { font-size: 11px; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-muted); margin: 1.2rem 0 0.4rem; }
+  .row { display: grid; gap: 4px; margin-bottom: 4px; }
+  .header-row { display: grid; gap: 4px; margin-bottom: 6px; }
+  .cell { border-radius: 4px; padding: 5px 8px; font-size: 12px; line-height: 1.4; }
+  .day-cell { text-align: center; font-size: 11px; color: var(--text-muted); font-weight: 500; padding: 4px 0; }
+  .label { color: var(--text-secondary); font-size: 12px; display: flex; align-items: center; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .empty { background: transparent; }
+  .today { border: 1.5px solid var(--border-accent); border-radius: 4px; }
+  .legend { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 1.2rem; }
+  .leg-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-secondary); }
+  .leg-dot { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; }
+  .milestone { font-size: 10px; color: var(--text-muted); margin-top: 2px; }
+</style>
+<div class="wrap">
+
+<div style="margin-bottom: 1rem;">
+  <p style="font-size: 13px; color: var(--text-secondary); margin: 0;">7월 13일(일) ~ 7월 30일(수) · 18일 · Phase 1–2 완성 목표</p>
+</div>
+
+<!-- 날짜 헤더 -->
+<div style="display: grid; grid-template-columns: 110px repeat(18, 1fr); gap: 3px; margin-bottom: 4px;">
+  <div></div>
+  <div class="day-cell" style="color:#A32D2D; font-weight:600;">13<br><span style="font-size:9px">일</span></div>
+  <div class="day-cell">14<br><span style="font-size:9px">월</span></div>
+  <div class="day-cell">15<br><span style="font-size:9px">화</span></div>
+  <div class="day-cell">16<br><span style="font-size:9px">수</span></div>
+  <div class="day-cell">17<br><span style="font-size:9px">목</span></div>
+  <div class="day-cell">18<br><span style="font-size:9px">금</span></div>
+  <div class="day-cell" style="color:#A32D2D;">19<br><span style="font-size:9px">토</span></div>
+  <div class="day-cell" style="color:#A32D2D;">20<br><span style="font-size:9px">일</span></div>
+  <div class="day-cell">21<br><span style="font-size:9px">월</span></div>
+  <div class="day-cell">22<br><span style="font-size:9px">화</span></div>
+  <div class="day-cell" style="border:1.5px solid #2a78d6; border-radius:3px; color:#2a78d6; font-weight:600;">23<br><span style="font-size:9px">수</span></div>
+  <div class="day-cell">24<br><span style="font-size:9px">목</span></div>
+  <div class="day-cell">25<br><span style="font-size:9px">금</span></div>
+  <div class="day-cell" style="color:#A32D2D;">26<br><span style="font-size:9px">토</span></div>
+  <div class="day-cell" style="color:#A32D2D;">27<br><span style="font-size:9px">일</span></div>
+  <div class="day-cell">28<br><span style="font-size:9px">월</span></div>
+  <div class="day-cell">29<br><span style="font-size:9px">화</span></div>
+  <div class="day-cell">30<br><span style="font-size:9px">수</span></div>
+</div>
+
+<!-- Phase 1 라벨 -->
+<div style="display: grid; grid-template-columns: 110px repeat(18,1fr); gap: 3px; margin-bottom: 2px;">
+  <div style="font-size:10px; font-weight:600; color:#185FA5; display:flex; align-items:center;">PHASE 1</div>
+  <div style="grid-column: span 10; background:#E6F1FB; border-radius:4px; font-size:10px; color:#185FA5; font-weight:500; padding: 2px 8px; display:flex; align-items:center;">React 환경설정 + Supabase Auth</div>
+  <div style="grid-column: span 8;"></div>
+</div>
+
+<!-- Row: 프로젝트 세팅 -->
+<div style="display: grid; grid-template-columns: 110px repeat(18,1fr); gap: 3px; margin-bottom: 3px; align-items:center;">
+  <div class="label">프로젝트 세팅</div>
+  <div style="grid-column: span 3; background:#B5D4F4; border-radius:4px; padding: 4px 7px; font-size:11px; color:#0C447C;">CRA/Vite + Tailwind</div>
+  <div style="grid-column: span 15;"></div>
+</div>
+
+<!-- Row: 라우팅 -->
+<div style="display: grid; grid-template-columns: 110px repeat(18,1fr); gap: 3px; margin-bottom: 3px; align-items:center;">
+  <div class="label">라우팅 구조</div>
+  <div></div>
+  <div style="grid-column: span 3; background:#B5D4F4; border-radius:4px; padding: 4px 7px; font-size:11px; color:#0C447C;">React Router 설정</div>
+  <div style="grid-column: span 14;"></div>
+</div>
+
+<!-- Row: Supabase Auth -->
+<div style="display: grid; grid-template-columns: 110px repeat(18,1fr); gap: 3px; margin-bottom: 3px; align-items:center;">
+  <div class="label">Supabase Auth</div>
+  <div style="grid-column: span 2;"></div>
+  <div style="grid-column: span 5; background:#B5D4F4; border-radius:4px; padding: 4px 7px; font-size:11px; color:#0C447C;">Google · Kakao OAuth 연동</div>
+  <div style="grid-column: span 11;"></div>
+</div>
+
+<!-- Row: 로그인/회원가입 UI -->
+<div style="display: grid; grid-template-columns: 110px repeat(18,1fr); gap: 3px; margin-bottom: 3px; align-items:center;">
+  <div class="label">로그인 UI</div>
+  <div style="grid-column: span 4;"></div>
+  <div style="grid-column: span 4; background:#85B7EB; border-radius:4px; padding: 4px 7px; font-size:11px; color:#042C53;">바이어/공급사 분기</div>
+  <div style="grid-column: span 10;"></div>
+</div>
+
+<!-- Phase 1 체크포인트 -->
+<div style="display: grid; grid-template-columns: 110px repeat(18,1fr); gap: 3px; margin-bottom: 6px; align-items:center;">
+  <div></div>
+  <div style="grid-column: span 9;"></div>
+  <div style="background:#E6F1FB; border:1px solid #185FA5; border-radius:4px; padding: 3px 6px; font-size:10px; color:#185FA5; text-align:center; font-weight:600;">✓ P1 완료</div>
+  <div style="grid-column: span 8;"></div>
+</div>
+
+<!-- Phase 2 라벨 -->
+<div style="display: grid; grid-template-columns: 110px repeat(18,1fr); gap: 3px; margin-bottom: 2px;">
+  <div style="font-size:10px; font-weight:600; color:#0F6E56; display:flex; align-items:center;">PHASE 2</div>
+  <div style="grid-column: span 8;"></div>
+  <div style="grid-column: span 10; background:#E1F5EE; border-radius:4px; font-size:10px; color:#0F6E56; font-weight:500; padding: 2px 8px; display:flex; align-items:center;">핵심 UI + Supabase DB 직접 연동</div>
+</div>
+
+<!-- Row: 상품 목록 -->
+<div style="display: grid; grid-template-columns: 110px repeat(18,1fr); gap: 3px; margin-bottom: 3px; align-items:center;">
+  <div class="label">상품 목록/상세</div>
+  <div style="grid-column: span 10;"></div>
+  <div style="grid-column: span 4; background:#9FE1CB; border-radius:4px; padding: 4px 7px; font-size:11px; color:#085041;">Mock → Supabase</div>
+  <div style="grid-column: span 4;"></div>
+</div>
+
+<!-- Row: 주문/에스크로 UI -->
+<div style="display: grid; grid-template-columns: 110px repeat(18,1fr); gap: 3px; margin-bottom: 3px; align-items:center;">
+  <div class="label">주문/에스크로 UI</div>
+  <div style="grid-column: span 11;"></div>
+  <div style="grid-column: span 4; background:#9FE1CB; border-radius:4px; padding: 4px 7px; font-size:11px; color:#085041;">Stripe Elements UI</div>
+  <div style="grid-column: span 3;"></div>
+</div>
+
+<!-- Row: 채팅 UI -->
+<div style="display: grid; grid-template-columns: 110px repeat(18,1fr); gap: 3px; margin-bottom: 3px; align-items:center;">
+  <div class="label">채팅 UI</div>
+  <div style="grid-column: span 12;"></div>
+  <div style="grid-column: span 4; background:#9FE1CB; border-radius:4px; padding: 4px 7px; font-size:11px; color:#085041;">Supabase Realtime</div>
+  <div style="grid-column: span 2;"></div>
+</div>
+
+<!-- Row: 배송 추적 -->
+<div style="display: grid; grid-template-columns: 110px repeat(18,1fr); gap: 3px; margin-bottom: 3px; align-items:center;">
+  <div class="label">배송 추적 UI</div>
+  <div style="grid-column: span 14;"></div>
+  <div style="grid-column: span 3; background:#5DCAA5; border-radius:4px; padding: 4px 7px; font-size:11px; color:#04342C;">AfterShip 연동</div>
+  <div></div>
+</div>
+
+<!-- Phase 2 체크포인트 -->
+<div style="display: grid; grid-template-columns: 110px repeat(18,1fr); gap: 3px; margin-bottom: 8px; align-items:center;">
+  <div></div>
+  <div style="grid-column: span 17;"></div>
+  <div style="background:#E1F5EE; border:1px solid #0F6E56; border-radius:4px; padding: 3px 6px; font-size:10px; color:#0F6E56; text-align:center; font-weight:600;">✓ MVP</div>
+</div>
+
+<!-- 버퍼/리뷰 -->
+<div style="display: grid; grid-template-columns: 110px repeat(18,1fr); gap: 3px; margin-bottom: 4px; align-items:center;">
+  <div class="label" style="color:var(--text-muted);">버퍼/리뷰</div>
+  <div style="grid-column: span 5;"></div>
+  <div style="grid-column: span 2; background:#D3D1C7; border-radius:4px; padding: 4px 7px; font-size:11px; color:#444441;">리뷰</div>
+  <div style="grid-column: span 4;"></div>
+  <div style="grid-column: span 2; background:#D3D1C7; border-radius:4px; padding: 4px 7px; font-size:11px; color:#444441;">리뷰</div>
+  <div style="grid-column: span 4;"></div>
+  <div style="background:#B4B2A9; border-radius:4px; padding: 4px 7px; font-size:11px; color:#2C2C2A;">QA</div>
+</div>
+
+<!-- 레전드 -->
+<div style="border-top: 0.5px solid var(--border); padding-top: 10px; margin-top: 6px;" class="legend">
+  <div class="leg-item"><div class="leg-dot" style="background:#B5D4F4;"></div>Phase 1 – React + Auth</div>
+  <div class="leg-item"><div class="leg-dot" style="background:#9FE1CB;"></div>Phase 2 – UI + Supabase</div>
+  <div class="leg-item"><div class="leg-dot" style="background:#D3D1C7;"></div>버퍼/리뷰</div>
+  <div class="leg-item"><div class="leg-dot" style="background:transparent; border:1.5px solid #2a78d6;"></div>오늘 (7/15)</div>
+</div>
+</div>
