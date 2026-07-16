@@ -64,7 +64,7 @@
 
 | 날짜 | 태스크 | 상세 내용 |
 |------|--------|-----------|
-| 8/1 (토) | Spring Boot 프로젝트 초기화 | Java 17, Gradle, 멀티모듈 구조 설계 |
+| 8/1 (토) | Spring Boot 프로젝트 초기화 | Java 25, Gradle, 멀티모듈 구조 설계 |
 | 8/2 (일) | Docker Compose 세팅 | Spring Boot + Supabase 로컬 환경 구성 |
 | 8/3 (월) | Spring Security + JWT 연동 | Supabase JWT 토큰 검증, 권한 우회 차단 |
 | 8/4 (화) | RBAC 구현 | 바이어 / 공급사 / 관리자 역할별 API 접근 제어 |

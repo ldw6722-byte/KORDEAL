@@ -1,6 +1,7 @@
 # KORDEAL 🇰🇷
 
 > 🇰🇷 [한국어 버전 보기](./README_KO.md)
+> [기획, 설계 및 시스템 구성 가이드 보기](./KORDEAL_플랫폼_기획_설계_및_시스템_구성_가이드.md)
 
 **Korea's First Global B2B Wholesale Sourcing Platform**
 

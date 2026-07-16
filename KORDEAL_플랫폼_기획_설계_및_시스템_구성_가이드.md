@@ -11,7 +11,7 @@
 | 영역 | 기술 |
 |------|------|
 | **Frontend** | React + Tailwind CSS (사용자 인터페이스 및 상태 관리) |
-| **Backend** | Spring Boot (Java 17/21 기반 핵심 비즈니스 로직 및 에스크로 엔진) |
+| **Backend** | Spring Boot (Java 25 기반 핵심 비즈니스 로직 및 에스크로 엔진) |
 | **Database & BaaS** | Supabase (PostgreSQL, Realtime 엔진, Storage) |
 | **AI Engine** | Claude API (B2B 전문 번역 및 상품 분류) |
 | **External APIs** | Stripe (결제), AfterShip (물류 추적), DeepL (보조 번역) <-차후 시장방향에 맞는 플렛폼 적용|
@@ -111,3 +111,5 @@ KORDEAL Platform
 ---
 
 > 이 아키텍처는 기술 스택의 강점을 극대화하면서 글로벌 B2B 거래의 신뢰성과 보안을 동시에 확보하도록 설계되었습니다.
+
+>[개발 스케줄](./KORDEAL 개발 스케줄)
